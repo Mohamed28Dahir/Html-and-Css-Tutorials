@@ -1,0 +1,19 @@
+.Slide {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+}
+
+.Slide img {
+    width: 200px; /* Waxaad badali kartaa size-ka */
+    height: auto;
+    margin-right: 10px; /* Spacing u dhexeeya sawirada */
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
